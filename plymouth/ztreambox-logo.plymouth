@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=ztreambox Logo
+Description=Ein schwarzer Bildschirmhintergrund mit dem ztreambox Logo.
+ModuleName=script
+
+[script]
+ImageDir=/lib/plymouth/themes/ztreambox-logo
+ScriptFile=/lib/plymouth/themes/ztreambox-logo/ztreambox-logo.script
