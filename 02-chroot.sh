@@ -26,7 +26,7 @@ ln -s /bin/true /sbin/initctl
 ###############################################################################
 
 #execute chroot modification scripts
-for script in $(find -type f - perm /u=x,g=x,o=x | sort)
+for script in $(find . -maxdepth 1 -type f \( -iname "*.sh" ! -iname "02-chroot.sh" \) | sort)
 do
 	$script || true
 done
