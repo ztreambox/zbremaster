@@ -17,7 +17,7 @@ First install git-core:
 sudo apt-get install git-core
 
 Then clone the git repository:
-git clone https://github.com/ztreambox/zbremster.git
+git clone https://github.com/ztreambox/zbremaster.git
 
 Change to directory zbremaster and run the prepare script:
 cd zbremaster
