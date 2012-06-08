@@ -60,10 +60,10 @@ sudo rm -f $CHROOTDIR/etc/apt/sources.list
 sudo cp /etc/apt/sources.list $CHROOTDIR/etc/apt/sources.list
 
 #copy chroot script into chroot
-sudo wget http://remaster.ztreambox.org/02-chroot.sh -O $CHROOTDIR/02-chroot.sh
+sudo cp $WORKDIR/02-chroot.sh $CHROOTDIR/02-chroot.sh
 
 #copy chroot modification scripts into chroot 
-sudo cp $WORKDIR/chroot-scripts/*.sh -O $CHROOTDIR/
+sudo cp $WORKDIR/chroot-scripts/*.sh $CHROOTDIR/
 
 #make the scripts in chroot executable
 sudo chmod +x $CHROOTDIR/*.sh
