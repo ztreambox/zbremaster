@@ -3,7 +3,7 @@ zbremaster
 
 Create ztreambox ISO from a remastered Ubuntu 12.04 with debootstrap (build from scratch).
 
-ztreambox is a combination of software applications that allows you to use a Linux operating system as a media center pc. ztreambox is based on Ubuntu desktop system, the XBMC media center and a video disk recorder (VDR). For more informations look at www.ztreambox.org (english) or www.ztreambox.org (german).
+ztreambox is a combination of software applications that allows you to use a Linux operating system as a media center pc. ztreambox is based on Ubuntu desktop system, the XBMC media center and a video disk recorder (VDR). For more informations look at www.ztreambox.com (english) or www.ztreambox.org (german).
 
 Scripts are based on the description from https://help.ubuntu.com/community/LiveCDCustomizationFromScratch
 

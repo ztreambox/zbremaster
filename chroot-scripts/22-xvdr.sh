@@ -41,7 +41,7 @@ if [ ! -d "/usr/src/xbmc-addon-xvdr" ]; then
 	make
 	make install
 else
-	#Bei einem Update
+	#when updating
 	cd /usr/src/xbmc-addon-xvdr
 	git pull https://github.com/pipelka/xbmc-addon-xvdr.git
 	sh autogen.sh
