@@ -1,0 +1,68 @@
+<!-- Holger, 04.11.2010                                                                                       -->
+<!-- Modifizierte Lircmap.xml als Vorlage fuer alle Fernbedienungen.                                          -->
+<!-- Alle in der remote.xml definierten Buttons in dieser Datei ebenfalls definiert.                          -->
+<!-- wird abgelegt in ~/.xbmc/userdata                                                                        -->
+<!-- Stellt fuer alle Fernbedienungen die Schnittstelle zwischen remote.xml und lircd.conf zur Verfuegung !   -->
+<!-- Es ist nur noch der Device Name aus der lircd.conf einzutragen.                                          -->
+<!-- In der lircd.conf ist darauf zu achten, dass die IR-Codes den hier aufgelistetn Namen zugewiesen werden! -->
+<!-- Syntax: <XBMC Button>LIRCNAME<XBMC Button>; LIRCNAME ist der Name der auch in der lircd.conf verwendet   -->
+<!-- werden muss !                                                                                            -->
+<!-- Changelog:                                                                                               -->
+<!-- 04.11.2010 <title> geloescht, da nicht auf MCE Remote vorhanden                                          -->
+<!-- 04.11.2010 Eintrag <rectv> in <recordedtv> geaendert                                                     -->
+<lircmap>
+        <!-- Definierten Namen aus lircd.conf eintragen ! -->
+	<remote device="mceusb">
+		<power>POWER</power>
+		<myTV>MYTV</myTV>
+		<mymusic>MYMUSIC</mymusic>
+		<mypictures>MYPICTURES</mypictures>
+		<myvideo>MYVIDEO</myvideo>
+		<play>PLAY</play>
+		<pause>PAUSE</pause>
+		<stop>STOP</stop>
+		<record>RECORD</record>
+		<reverse>REWIND</reverse>
+		<forward>FORWARD</forward>
+		<skipplus>SKIP</skipplus>
+		<skipminus>REPLAY</skipminus>
+		<back>BACK</back>
+		<info>INFO</info>
+		<up>UP</up>
+		<down>DOWN</down>
+		<left>LEFT</left>
+		<right>RIGHT</right>
+		<select>OK</select>
+		<start>START</start>
+		<volumeplus>VOLUP</volumeplus>
+		<volumeminus>VOLDOWN</volumeminus>
+		<pageplus>CHANUP</pageplus>
+		<pageminus>CHANDOWN</pageminus>
+		<mute>MUTE</mute>
+		<recordedtv>RECTV</recordedtv>
+		<guide>GUIDE</guide>
+		<livetv>LIVETV</livetv>
+		<menu>DVDMENU</menu>
+		<one>1</one>
+		<two>2</two>
+		<three>3</three>
+		<four>4</four>
+		<five>5</five>
+		<six>6</six>
+		<seven>7</seven>
+		<eight>8</eight>
+		<nine>9</nine>
+		<zero>0</zero>
+		<star>STAR</star>
+		<hash>HASH</hash>
+		<clear>CLEAR</clear>
+		<enter>ENTER</enter>
+		<red>RED</red>
+		<green>GREEN</green>
+		<yellow>YELLOW</yellow>
+		<blue>BLUE</blue>
+		<subtitle>SUBTITLE</subtitle>
+		<language>LANGUAGE</language>
+		<teletext>TELETEXT</teletext>
+	</remote>
+</lircmap>
