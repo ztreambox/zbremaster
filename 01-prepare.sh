@@ -60,10 +60,10 @@ sudo rm -f $CHROOTDIR/etc/apt/sources.list
 sudo cp /etc/apt/sources.list $CHROOTDIR/etc/apt/sources.list
 
 #copy chroot script into chroot
-sudo cp $WORKDIR/02-chroot.sh $CHROOTDIR/02-chroot.sh
+sudo cp 02-chroot.sh $CHROOTDIR/02-chroot.sh
 
 #copy chroot modification scripts into chroot 
-sudo cp $WORKDIR/chroot-scripts/*.sh $CHROOTDIR/
+sudo cp chroot-scripts/*.sh $CHROOTDIR/
 
 #make the scripts in chroot executable
 sudo chmod +x $CHROOTDIR/*.sh
