@@ -33,23 +33,23 @@ cp /usr/lib/syslinux/isolinux.bin $IMAGEDIR/isolinux/
 cp /usr/lib/syslinux/vesamenu.c32 $IMAGEDIR/isolinux/
 if [ -f "$WORKDIR/lang.de" ]; then
 	echo "de_DE.UTF-8" > $IMAGEDIR/isolinux/lang
-	cp $WORKDIR/isolinux/isolinux-de.cfg $IMAGEDIR/isolinux/isolinux.cfg
+	cp isolinux/isolinux-de.cfg $IMAGEDIR/isolinux/isolinux.cfg
 else
-	cp $WORKDIR/isolinux/isolinux-en.cfg $IMAGEDIR/isolinux/isolinux.cfg
+	cp isolinux/isolinux-en.cfg $IMAGEDIR/isolinux/isolinux.cfg
 fi
-cp $WORKDIR/isolinux/splash.png $IMAGEDIR/isolinux/splash.png
+cp isolinux/splash.png $IMAGEDIR/isolinux/splash.png
 
 #copy preseed
 if [ -f "$WORKDIR/lang.de" ]; then
-	cp $WORKDIR/preseed/chooseyourown-de.seed $IMAGEDIR/preseed/chooseyourown.seed
-	cp $WORKDIR/preseed/allinone-de.seed $IMAGEDIR/preseed/allinone.seed
-	cp $WORKDIR/preseed/seperatehome-de.seed $IMAGEDIR/preseed/seperatehome.seed
+	cp preseed/chooseyourown-de.seed $IMAGEDIR/preseed/chooseyourown.seed
+	cp preseed/allinone-de.seed $IMAGEDIR/preseed/allinone.seed
+	cp preseed/seperatehome-de.seed $IMAGEDIR/preseed/seperatehome.seed
 else
-	cp $WORKDIR/preseed/chooseyourown-en.seed $IMAGEDIR/preseed/chooseyourown.seed
-	cp $WORKDIR/preseed/allinone-en.seed $IMAGEDIR/preseed/allinone.seed
-	cp $WORKDIR/preseed/seperatehome-en.seed $IMAGEDIR/preseed/seperatehome.seed
+	cp preseed/chooseyourown-en.seed $IMAGEDIR/preseed/chooseyourown.seed
+	cp preseed/allinone-en.seed $IMAGEDIR/preseed/allinone.seed
+	cp preseed/seperatehome-en.seed $IMAGEDIR/preseed/seperatehome.seed
 fi
-cp $WORKDIR/preseed/ubuntu.seed $IMAGEDIR/preseed/ubuntu.seed
+cp preseed/ubuntu.seed $IMAGEDIR/preseed/ubuntu.seed
 
 #create manifest
 sudo chroot $CHROOTDIR dpkg-query -W --showformat='${Package} ${Version}\n' | sudo tee $IMAGEDIR/casper/filesystem.manifest
