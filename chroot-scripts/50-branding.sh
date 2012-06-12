@@ -9,10 +9,12 @@ sleep 3
 (
 
 #set background
-wget http://remaster.ztreambox.org/media/ztreambox.png -O /usr/share/backgrounds/warty-final-ubuntu.png
+#wget http://remaster.ztreambox.org/media/ztreambox.png -O /usr/share/backgrounds/warty-final-ubuntu.png
+cp zbremaster/media/ztreambox.png /usr/share/backgrounds/warty-final-ubuntu.png
 
 #background and logo for login
-wget http://remaster.ztreambox.org/media/logo.png -O /usr/share/unity-greeter/logo.png
+#wget http://remaster.ztreambox.org/media/logo.png -O /usr/share/unity-greeter/logo.png
+cp zbremaster/media/logo.png /usr/share/unity-greeter/logo.png
 
 #unity-greeter config
 rm -f /etc/lightdm/unity-greeter.conf
