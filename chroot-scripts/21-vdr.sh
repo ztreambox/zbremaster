@@ -20,10 +20,10 @@ fi
 ISCONFED=`dpkg -s vdr | grep 'install ok installed'`
 if [ -z "$ISCONFED" ]; then
 	cd /
-	mkdir $VDRDIR
-	cd $VDRDIR
+	#mkdir $VDRDIR
+	cd zbremaster/$VDRDIR
 	#download zip file
-	wget http://remaster.ztreambox.org/$VDRDIR/$ARCH/$VDRDIR.zip
+	#wget http://remaster.ztreambox.org/$VDRDIR/$ARCH/$VDRDIR.zip
 	#unpack zip file
 	unzip -o $VDRDIR.zip
 	#install dependencies
@@ -32,7 +32,7 @@ if [ -z "$ISCONFED" ]; then
 	dpkg -i *.deb
 	#cleanup
 	cd /
-	rm -rf /$VDRDIR
+	#rm -rf /$VDRDIR
 	#report installed packages
 	dpkg-query -W --showformat='${Package} ${Version}\n' > 13-vdr-packages.txt
 fi
