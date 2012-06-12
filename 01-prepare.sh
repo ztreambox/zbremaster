@@ -104,7 +104,7 @@ sudo mv $CHROOTDIR/*.log $LOGDIR/
 sudo mv $CHROOTDIR/*.txt $PKGDIR/
 
 #delete zbremaster dir in chroot
-sudo rm -f $CHROOTDIR/zbremaster/
+sudo rm -rf $CHROOTDIR/zbremaster/
 
 #cleanup chroot
 sudo rm -f $CHROOTDIR/*.txt
