@@ -376,8 +376,8 @@ fi
 #Lircmap.xml and Keymap.
 #wget http://remaster.ztreambox.org/xbmc/Lircmap.xml -O /etc/skel/.xbmc/userdata/Lircmap.xml
 #wget http://remaster.ztreambox.org/xbmc/Keymap.xml -O /etc/skel/.xbmc/userdata/keymaps/Keymap.xml
-cp zbremaster/xbmc/Lircmap.xml -O /etc/skel/.xbmc/userdata/Lircmap.xml
-cp zbremaster/xbmc/Keymap.xml -O /etc/skel/.xbmc/userdata/keymaps/Keymap.xml
+cp zbremaster/xbmc/Lircmap.xml /etc/skel/.xbmc/userdata/Lircmap.xml
+cp zbremaster/xbmc/Keymap.xml /etc/skel/.xbmc/userdata/keymaps/Keymap.xml
 	
 #xbmc addons
 repoURL="http://mirrors.xbmc.org/addons/eden/"
@@ -399,7 +399,7 @@ done
 #tv-logos
 if [ ! -f "/etc/skel/.xbmc/tvlogos/zdf.png" ]; then
 	#wget http://remaster.ztreambox.org/dvb/tvlogos.zip -O /etc/skel/.xbmc/tvlogos/tvlogos.zip
-	cp zbremaster/dvb/tvlogos.zip -O /etc/skel/.xbmc/tvlogos/tvlogos.zip
+	cp zbremaster/dvb/tvlogos.zip /etc/skel/.xbmc/tvlogos/tvlogos.zip
 	unzip -o /etc/skel/.xbmc/tvlogos/tvlogos.zip -d /etc/skel/.xbmc/tvlogos
 	rm -f /etc/skel/.xbmc/tvlogos/tvlogos.zip
 fi
