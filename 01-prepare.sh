@@ -69,10 +69,9 @@ sudo cp chroot-scripts/*.sh $CHROOTDIR/
 sudo chmod +x $CHROOTDIR/*.sh
 
 #copy other needed files into chroot
-sudo mkdir -p $CHROOTDIR/zbremaster/{dvb,etc,isolinux,media,plymouth,ubiquity-slideshow,vdr-1.7.23,xbmc,zbmenu,zbscripts}
+sudo mkdir -p $CHROOTDIR/zbremaster/{dvb,etc,media,plymouth,ubiquity-slideshow,vdr-1.7.23,xbmc,zbmenu,zbscripts}
 sudo cp -r dvb/* $CHROOTDIR/zbremaster/dvb/
 sudo cp -r etc/* $CHROOTDIR/zbremaster/etc/
-sudo cp -r isolinux/* $CHROOTDIR/zbremaster/isolinux/
 sudo cp -r media/* $CHROOTDIR/zbremaster/media/
 sudo cp -r plymouth/* $CHROOTDIR/zbremaster/plymouth/
 sudo cp -r ubiquity-slideshow/* $CHROOTDIR/zbremaster/ubiquity-slideshow/
