@@ -93,7 +93,7 @@ find . -type f -print0 | sudo xargs -0 md5sum | sudo sh -c 'grep -v "\./md5sum.t
 
 #create ISO image
 export ISOLABEL="ztreambox"
-if [ -f "$WORKDIR\lang.de" ]; then
+if [ -f "$WORKDIR/lang.de" ]; then
 	export ISONAME="ztreambox-12.04.01-remix-de-i386.iso"
 else
 	export ISONAME="ztreambox-12.04.01-remix-en-i386.iso"
