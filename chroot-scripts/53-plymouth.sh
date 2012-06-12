@@ -11,14 +11,22 @@ sleep 3
 #plymouth ztreambox-logo
 rm -rf /lib/plymouth/themes/ztreambox-logo
 mkdir /lib/plymouth/themes/ztreambox-logo
-wget http://remaster.ztreambox.org/plymouth/ztreambox_logo.png -O /lib/plymouth/themes/ztreambox-logo/ztreambox_logo.png
-wget http://remaster.ztreambox.org/plymouth/ztreambox_logo16.png -O /lib/plymouth/themes/ztreambox-logo/ztreambox_logo16.png
-wget http://remaster.ztreambox.org/plymouth/progress_dot_off.png -O /lib/plymouth/themes/ztreambox-logo/progress_dot_off.png
-wget http://remaster.ztreambox.org/plymouth/progress_dot_off16.png -O /lib/plymouth/themes/ztreambox-logo/progress_dot_off16.png
-wget http://remaster.ztreambox.org/plymouth/progress_dot_on.png -O /lib/plymouth/themes/ztreambox-logo/progress_dot_on.png
-wget http://remaster.ztreambox.org/plymouth/progress_dot_on16.png -O /lib/plymouth/themes/ztreambox-logo/progress_dot_on16.png
-wget http://remaster.ztreambox.org/plymouth/ztreambox-logo.script -O /lib/plymouth/themes/ztreambox-logo/ztreambox-logo.script
-wget http://remaster.ztreambox.org/plymouth/ztreambox-logo.plymouth -O /lib/plymouth/themes/ztreambox-logo/ztreambox-logo.plymouth
+#wget http://remaster.ztreambox.org/plymouth/ztreambox_logo.png -O /lib/plymouth/themes/ztreambox-logo/ztreambox_logo.png
+#wget http://remaster.ztreambox.org/plymouth/ztreambox_logo16.png -O /lib/plymouth/themes/ztreambox-logo/ztreambox_logo16.png
+#wget http://remaster.ztreambox.org/plymouth/progress_dot_off.png -O /lib/plymouth/themes/ztreambox-logo/progress_dot_off.png
+#wget http://remaster.ztreambox.org/plymouth/progress_dot_off16.png -O /lib/plymouth/themes/ztreambox-logo/progress_dot_off16.png
+#wget http://remaster.ztreambox.org/plymouth/progress_dot_on.png -O /lib/plymouth/themes/ztreambox-logo/progress_dot_on.png
+#wget http://remaster.ztreambox.org/plymouth/progress_dot_on16.png -O /lib/plymouth/themes/ztreambox-logo/progress_dot_on16.png
+#wget http://remaster.ztreambox.org/plymouth/ztreambox-logo.script -O /lib/plymouth/themes/ztreambox-logo/ztreambox-logo.script
+#wget http://remaster.ztreambox.org/plymouth/ztreambox-logo.plymouth -O /lib/plymouth/themes/ztreambox-logo/ztreambox-logo.plymouth
+cp zbremaster/plymouth/ztreambox_logo.png /lib/plymouth/themes/ztreambox-logo/ztreambox_logo.png
+cp zbremaster/plymouth/ztreambox_logo16.png /lib/plymouth/themes/ztreambox-logo/ztreambox_logo16.png
+cp zbremaster/plymouth/progress_dot_off.png /lib/plymouth/themes/ztreambox-logo/progress_dot_off.png
+cp zbremaster/plymouth/progress_dot_off16.png /lib/plymouth/themes/ztreambox-logo/progress_dot_off16.png
+cp zbremaster/plymouth/progress_dot_on.png /lib/plymouth/themes/ztreambox-logo/progress_dot_on.png
+cp zbremaster/plymouth/progress_dot_on16.png /lib/plymouth/themes/ztreambox-logo/progress_dot_on16.png
+cp zbremaster/plymouth/ztreambox-logo.script /lib/plymouth/themes/ztreambox-logo/ztreambox-logo.script
+cp zbremaster/plymouth/ztreambox-logo.plymouth /lib/plymouth/themes/ztreambox-logo/ztreambox-logo.plymouth
 update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/ztreambox-logo/ztreambox-logo.plymouth 200
 update-alternatives --auto default.plymouth
 
