@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<launchers>
+	<launcher>
+		<id>1</id>
+		<name>Skripte synchronisieren</name>
+		<application>/home/xbmc/zbscripts/syncscript.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+	<launcher>
+		<id>2</id>
+		<name>Kanalliste konfigurieren</name>
+		<application>/home/xbmc/zbscripts/channelsconf.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+	<launcher>
+		<id>3</id>
+		<name>Airvideo-Server installieren</name>
+		<application>/home/xbmc/zbscripts/airvideo-server.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+	<launcher>
+		<id>4</id>
+		<name>SSH-Hostkeys neu erstellen</name>
+		<application>/home/xbmc/zbscripts/ssh_new.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+	<launcher>
+		<id>5</id>
+		<name>TV-Logopack installieren</name>
+		<application>/home/xbmc/zbscripts/tvlogopack.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+	<launcher>
+		<id>6</id>
+		<name>Rechner- und Arbeitsgruppennamen anpassen</name>
+		<application>/home/xbmc/zbscripts/sethostname.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+	<launcher>
+		<id>7</id>
+		<name>XBMC Skins installieren</name>
+		<application>/home/xbmc/zbscripts/xbmc-skins.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+	<launcher>
+		<id>8</id>
+		<name>makeMKV installieren</name>
+		<application>/home/xbmc/zbscripts/makeblue.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+	<launcher>
+		<id>9</id>
+		<name>DVB Treiber installieren</name>
+		<application>/home/xbmc/zbscripts/dvbdrivers.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+	<launcher>
+		<id>10</id>
+		<name>Fernbedienung installieren</name>
+		<application>/home/xbmc/zbscripts/remotes.sh</application>
+		<platform>Linux</platform>
+		<minimize>true</minimize>
+	</launcher>
+</launchers>
