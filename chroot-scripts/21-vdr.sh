@@ -21,7 +21,7 @@ ISCONFED=`dpkg -s vdr | grep 'install ok installed'`
 if [ -z "$ISCONFED" ]; then
 	cd /
 	#mkdir $VDRDIR
-	cd zbremaster/$VDRDIR
+	cd zbremaster/$VDRDIR/$ARCH
 	#download zip file
 	#wget http://remaster.ztreambox.org/$VDRDIR/$ARCH/$VDRDIR.zip
 	#unpack zip file
