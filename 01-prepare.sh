@@ -68,6 +68,19 @@ sudo cp chroot-scripts/*.sh $CHROOTDIR/
 #make the scripts in chroot executable
 sudo chmod +x $CHROOTDIR/*.sh
 
+#copy other needed files into chroot
+sudo mkdir -p $CHROOTDIR/zbremaster/{dvb,etc,isolinux,media,plymouth,ubiquity-slideshow,vdr-1.7.23,xbmc,zbmenu,zbscripts}
+sudo cp dvb/* $CHROOTDIR/zbremaster/dvb/
+sudo cp etc/* $CHROOTDIR/zbremaster/etc/
+sudo cp isolinux/* $CHROOTDIR/zbremaster/isolinux/
+sudo cp media/* $CHROOTDIR/zbremaster/media/
+sudo cp plymouth/* $CHROOTDIR/zbremaster/plymouth/
+sudo cp ubiquity-slideshow/* $CHROOTDIR/zbremaster/ubiquity-slideshow/
+sudo cp vdr-1.7.23/* $CHROOTDIR/zbremaster/vdr-1.7.23/
+sudo cp xbmc/* $CHROOTDIR/zbremaster/xbmc/
+sudo cp zbmenu/* $CHROOTDIR/zbremaster/zbmenu/
+sudo cp zbscripts/* $CHROOTDIR/zbremaster/zbscripts/
+
 ) 2>&1 | tee $LOGDIR/01-prepare.log
 
 #jump into chroot
