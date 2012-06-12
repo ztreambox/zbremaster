@@ -31,7 +31,7 @@ sed -i 's/#0/0/' /var/lib/vdr/plugins/xvdr/allowed_hosts.conf
 #/var/lib/vdr/setup.conf
 rm -f /var/lib/vdr/setup.conf
 #wget http://remaster.ztreambox.org/$VDRDIR/setup.conf -O /var/lib/vdr/setup.conf
-cp zbremaster/$VDRDIR/setup.conf -O /var/lib/vdr/setup.conf
+cp zbremaster/$VDRDIR/setup.conf /var/lib/vdr/setup.conf
 chown vdr:vdr /var/lib/vdr/setup.conf
 #set MinUserInactivity = 0
 #set UpdateChannels = 0
@@ -39,7 +39,7 @@ chown vdr:vdr /var/lib/vdr/setup.conf
 #channels.conf
 rm -f /var/lib/vdr/channels.conf
 #wget http://remaster.ztreambox.org/dvb/channels.conf -O /var/lib/vdr/channels.conf
-cp zbremaster/dvb/channels.conf -O /var/lib/vdr/channels.conf
+cp zbremaster/dvb/channels.conf /var/lib/vdr/channels.conf
 chown vdr:vdr /var/lib/vdr/channels.conf
 
 #remote.conf
