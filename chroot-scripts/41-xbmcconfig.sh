@@ -381,7 +381,7 @@ cp zbremaster/xbmc/Keymap.xml /etc/skel/.xbmc/userdata/keymaps/Keymap.xml
 	
 #xbmc addons
 repoURL="http://mirrors.xbmc.org/addons/eden/"
-ADDONSLIST=(script.rss.editor script.xbmc.audio.mixer metadata.ofdb.de metadata.kino.de plugin.audio.icecast webinterface.XWMM plugin.program.advanced.launcher)
+ADDONSLIST=(script.rss.editor script.xbmc.audio.mixer metadata.ofdb.de metadata.kino.de plugin.audio.icecast webinterface.XWMM plugin.program.advanced.launcher script.linux.nm)
 for k in "${ADDONSLIST[@]}" ; do
 	echo " $k"
 	addonURL="$repoURL$k/"
