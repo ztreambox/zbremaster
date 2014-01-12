@@ -94,9 +94,9 @@ find . -type f -print0 | sudo xargs -0 md5sum | sudo sh -c 'grep -v "\./md5sum.t
 #create ISO image
 export ISOLABEL="ztreambox"
 if [ -f "$WORKDIR/lang.de" ]; then
-	export ISONAME="ztreambox-12.04.01-remix-de-i386.iso"
+	export ISONAME="ztreambox-12.04.03-remix-de-i386.iso"
 else
-	export ISONAME="ztreambox-12.04.01-remix-en-i386.iso"
+	export ISONAME="ztreambox-12.04.03-remix-en-i386.iso"
 fi
 sudo mkisofs -r -V "$ISOLABEL" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../$ISONAME .
 cd $WORKDIR
